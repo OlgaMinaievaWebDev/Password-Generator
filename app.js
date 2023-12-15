@@ -92,7 +92,7 @@ const characters = [
   "?",
   "/",
 ];
-
+let passwordLength = 15;
 //add event listener to Generate password button
 
 const generatePasswordBtn = document.getElementById("generate");
@@ -101,4 +101,25 @@ let passwordTwo = document.getElementById("passwordTwo");
 
 generatePasswordBtn.addEventListener("click", function () {
   console.log("clicked");
+  getPasswordOne();
+  getPasswordTwo();
 });
+
+//get password for button one and two
+function getPasswordOne() {
+  let arrayOne = [];
+  for (let i = 0; i < passwordLength; i++) {
+    let randomIndex = Math.floor(Math.random() * characters.length);
+    arrayOne.push(characters[randomIndex]);
+  }
+  passwordOne.textContent = arrayOne.join("");
+}
+
+function getPasswordTwo() {
+  let arrayTwo = [];
+  for (let i = 0; i < passwordLength; i++) {
+    let randomIndex = Math.floor(Math.random() * characters.length);
+    arrayTwo.push(characters[randomIndex]);
+  }
+  passwordTwo.textContent = arrayTwo.join("");
+}
