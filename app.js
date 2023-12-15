@@ -102,7 +102,8 @@ let passwordTwo = document.getElementById("passwordTwo");
 generatePasswordBtn.addEventListener("click", function () {
   console.log("clicked");
   getPasswordOne();
-  getPasswordTwo();
+ getPasswordTwo();
+ copyTextOne();
 });
 
 //get password for button one and two
@@ -123,3 +124,4 @@ function getPasswordTwo() {
   }
   passwordTwo.textContent = arrayTwo.join("");
 }
+
