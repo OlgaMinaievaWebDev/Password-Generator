@@ -106,7 +106,8 @@ generatePasswordBtn.addEventListener("click", function () {
 
 //get password for button one and two
 function getPasswordOne() {
-  let arrayOne = [];
+ let arrayOne = [];
+ 
   for (let i = 0; i < passwordLength; i++) {
     let randomIndex = Math.floor(Math.random() * characters.length);
     arrayOne.push(characters[randomIndex]);
@@ -122,3 +123,4 @@ function getPasswordTwo() {
   }
   passwordTwo.textContent = arrayTwo.join("");
 }
+
