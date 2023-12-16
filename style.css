@@ -70,6 +70,8 @@ p {
 
 #passwordOne,
 #passwordTwo {
+ width: 30%;
+ height: 8%;
   margin-top: 35px;
   margin-right: 52px;
   background-color: #2f3e53;
